@@ -3005,10 +3005,6 @@
 		(uuid "8d39df47-7535-4fea-8e32-991086bac7e8")
 	)
 	(no_connect
-		(at 124.46 90.17)
-		(uuid "92d57e95-e4cf-4692-a095-34d67d9d722a")
-	)
-	(no_connect
 		(at 147.32 62.23)
 		(uuid "9b835b82-efa6-4d41-a600-6b8df2d0e36f")
 	)
@@ -3296,6 +3292,16 @@
 	)
 	(wire
 		(pts
+			(xy 196.85 101.6) (xy 200.66 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45a3c287-30ef-42bd-b56f-4976699149b7")
+	)
+	(wire
+		(pts
 			(xy 43.18 87.63) (xy 46.99 87.63)
 		)
 		(stroke
@@ -3313,6 +3319,16 @@
 			(type default)
 		)
 		(uuid "4e1f487c-8534-4890-930e-a3cb31a2723f")
+	)
+	(wire
+		(pts
+			(xy 195.58 96.52) (xy 200.66 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e763eb2-b5ca-4636-965d-0ca8d43f4359")
 	)
 	(wire
 		(pts
@@ -4696,6 +4712,30 @@
 			)
 		)
 	)
+	(global_label "PWM_FAN"
+		(shape input)
+		(at 124.46 90.17 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3bb52daf-be7b-4fdb-9720-c4020a9f0184")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 112.8267 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "M4_DIAG"
 		(shape input)
 		(at 124.46 125.73 180)
@@ -4864,6 +4904,30 @@
 			)
 		)
 	)
+	(global_label "PWM_FAN"
+		(shape input)
+		(at 200.66 99.06 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6d4b6482-92c9-4868-91ee-cec687567b24")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.0267 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "M3_MS1"
 		(shape input)
 		(at 259.08 69.85 180)
@@ -4936,6 +5000,30 @@
 			)
 		)
 	)
+	(global_label "Vcc"
+		(shape input)
+		(at 195.58 96.52 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "738638b2-859c-4d46-87b0-8e1ac871422c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.329 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "Vlogic"
 		(shape input)
 		(at 43.18 60.96 180)
@@ -4984,7 +5072,7 @@
 			)
 		)
 	)
-	(global_label "PWM_L"
+	(global_label "PWM_LASER"
 		(shape input)
 		(at 195.58 80.01 180)
 		(fields_autoplaced yes)
@@ -4996,7 +5084,7 @@
 		)
 		(uuid "81cc250a-d519-45a1-8e33-38d22ee67b8d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 186.4263 80.01 0)
+			(at 181.7092 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5200,7 +5288,7 @@
 			)
 		)
 	)
-	(global_label "PWM_L"
+	(global_label "PWM_LASER"
 		(shape input)
 		(at 160.02 90.17 0)
 		(fields_autoplaced yes)
@@ -5212,7 +5300,7 @@
 		)
 		(uuid "a1589551-f3a2-4b3e-a151-c6e4093498c0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 169.1737 90.17 0)
+			(at 173.8908 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7122,6 +7210,86 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 196.85 101.6 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3873ec3f-f7b3-4903-b3c4-ca212b35722d")
+		(property "Reference" "#PWR018"
+			(at 190.5 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 193.04 101.5999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 196.85 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1aa5e0b0-2855-404f-a9a5-d11e3295f65c")
+		)
+		(instances
+			(project "LaserEngraver"
+				(path "/cbab8c1b-ab80-43d0-89dc-504cd16ada91"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 44.45 63.5 270)
 		(unit 1)
 		(body_style 1)
@@ -7938,6 +8106,91 @@
 			(project "LaserEngraver"
 				(path "/cbab8c1b-ab80-43d0-89dc-504cd16ada91"
 					(reference "JP11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Socket")
+		(at 205.74 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6605d75f-4454-47ae-94d1-e47a8da592c5")
+		(property "Reference" "J11"
+			(at 207.01 97.7899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "fan connector"
+			(at 207.01 100.3299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 205.74 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f45bbd42-dacf-466e-b285-dd2099b73235")
+		)
+		(pin "2"
+			(uuid "b33e5248-ce62-4408-863b-7454814f3f56")
+		)
+		(pin "3"
+			(uuid "7d50454f-3325-4a95-816c-b61c4e2b949d")
+		)
+		(instances
+			(project "LaserEngraver"
+				(path "/cbab8c1b-ab80-43d0-89dc-504cd16ada91"
+					(reference "J11")
 					(unit 1)
 				)
 			)
